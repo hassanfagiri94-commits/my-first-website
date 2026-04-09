@@ -1,99 +1,183 @@
 <!DOCTYPE html>
-<html>
+<html lang="ar" dir="rtl">
 <head>
-    <title>FAGIRI TECHNOLOGY</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fagiri Technology</title>
 
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial;
-        }
-
-.hero {
-    animation: fadeIn 0.5s ease-in;
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: 'Segoe UI', sans-serif;
 }
 
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-        transform: translateY(-20px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
+body{
+    background:#0f172a;
+    color:#fff;
 }
 
-        .navbar {
-            background-color: #333;
-            padding: 15px;
-            color: white;
-            text-align: center;
-        }
-
-.navbar a {
-    color: white;
-    margin: 0 10px;
-    text-decoration: none;
+/* Navbar */
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 40px;
+    background:#020617;
 }
 
-.navbar a:hover {
-    color: #00ffcc;
-}
-        
-        .hero {
-            background-color: #1e1e2f;
-            color: white;
-            text-align: center;
-            padding: 50px;
-        }
-
-        .btn {
-    background-color: #00ffcc;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 10px;
-    cursor: pointer;
-    transition: 0.3s;
+nav h1{
+    color:#38bdf8;
 }
 
-.btn:hover {
-    background-color: #00ccaa;
-    transform: scale(1.1);
+nav a{
+    color:#fff;
+    margin:0 10px;
+    text-decoration:none;
 }
 
-        .section {
-            padding: 30px;
-            text-align: center;
-        }
-    </style>
+/* Hero */
+.hero{
+    height:90vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    background: linear-gradient(135deg,#0f172a,#1e293b);
+}
+
+.hero h2{
+    font-size:40px;
+    margin-bottom:20px;
+}
+
+.hero p{
+    color:#cbd5f5;
+    margin-bottom:20px;
+}
+
+.btn{
+    background:#22c55e;
+    padding:12px 25px;
+    border:none;
+    border-radius:8px;
+    color:#fff;
+    text-decoration:none;
+    transition:0.3s;
+}
+
+.btn:hover{
+    background:#16a34a;
+}
+
+/* Services */
+.services{
+    padding:60px 20px;
+    text-align:center;
+}
+
+.services h2{
+    margin-bottom:30px;
+}
+
+.cards{
+    display:flex;
+    gap:20px;
+    flex-wrap:wrap;
+    justify-content:center;
+}
+
+.card{
+    background:#1e293b;
+    padding:20px;
+    border-radius:10px;
+    width:250px;
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+    background:#334155;
+}
+
+/* Contact */
+.contact{
+    padding:60px;
+    text-align:center;
+}
+
+.contact a{
+    color:#38bdf8;
+}
+
+/* Footer */
+footer{
+    text-align:center;
+    padding:20px;
+    background:#020617;
+    margin-top:30px;
+}
+</style>
 
 </head>
+
 <body>
 
-<div class="navbar">
-    <h2>FAGIRI TECHNOLOGY</h2>
-<a href="#services">خدماتنا</a>
-<a href="#contact">تواصل</a>
-</div>
+<!-- Navbar -->
+<nav>
+    <h1>Fagiri Tech 🚀</h1>
+    <div>
+        <a href="#">الرئيسية</a>
+        <a href="#services">خدماتنا</a>
+        <a href="#contact">تواصل</a>
+    </div>
+</nav>
 
-<div class="hero">
-    <h1>مرحبا بك في فقيري للتقنية 🚀</h1>
-    <p>نحن نقدم خدمات برمجة وتصميم مواقع</p>
-    <a href="https://wa.me/97471116037" target="_blank">
-    <button class="btn">تواصل معنا يا معلم</button>
-</a>
-</div>
+<!-- Hero -->
+<section class="hero">
+    <h2>مرحباً بك في Fagiri Technology 💻</h2>
+    <p>نصمم مواقع احترافية ونبني حلول تقنية حديثة</p>
 
-<div class="section" id="services">
+    <a class="btn" href="https://wa.me/974XXXXXXXX" target="_blank">
+        تواصل عبر واتساب
+    </a>
+</section>
+
+<!-- Services -->
+<section class="services" id="services">
     <h2>خدماتنا</h2>
-    <p>تصميم مواقع - تطبيقات - برمجة-واي شي</p>
-</div>
 
-<div class="section" id="contact">
+    <div class="cards">
+        <div class="card">
+            <h3>تصميم مواقع</h3>
+            <p>مواقع عصرية وسريعة</p>
+        </div>
+
+        <div class="card">
+            <h3>برمجة تطبيقات</h3>
+            <p>حلول ذكية للمشاريع</p>
+        </div>
+
+        <div class="card">
+            <h3>دعم تقني</h3>
+            <p>حل مشاكل الأنظمة والشبكات</p>
+        </div>
+    </div>
+</section>
+
+<!-- Contact -->
+<section class="contact" id="contact">
     <h2>تواصل معنا</h2>
-    <p>راسلنا عبر واتساب أو اتصل عبر احد ارقامنا</p>
-</div>
+    <p>📞 واتساب: 97472172100</p>
+    <p>📧 hassanfagiri94@gmail.com</p>
+</section>
+
+<!-- Footer -->
+<footer>
+    <p>© 2026 Fagiri Technology</p>
+</footer>
 
 </body>
 </html>
