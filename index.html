@@ -72,6 +72,36 @@ nav a:hover{
     transform: translateY(-1px);
     box-shadow: 0 2px 6px rgba(0,0,0,1);
 }
+@media (max-width: 768px) {
+
+  nav {
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .hero h2 {
+    font-size: 20px;
+  }
+
+  .hero p {
+    font-size: 14px;
+    padding: 0 10px;
+  }
+
+  .btn {
+    display: block;
+    width: 80%;
+    margin: 10px auto;
+  }
+
+}
 .hero{height:20vh;display:flex;justify-content:center;align-items:center;text-align:center;flex-direction:column;padding:20px}
 .hero h1{font-size:45px}
 .hero span{color:#0284c7}
