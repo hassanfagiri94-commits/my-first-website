@@ -6,119 +6,68 @@
 <title>Fagiri Technology</title>
 
 <style>
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family: 'Segoe UI', sans-serif;
-}
-
-body{
-    background:#0f172a;
-    color:#fff;
-}
-
-/* Navbar */
-nav{
-    display:flex;
+body{margin:0;font-family:'Cairo',sans-serif;background:linear-gradient(135deg,#e0f2fe,#f8fafc);color:#0f172a}
+nav{display:flex;
     justify-content:space-between;
-    align-items:center;
+    align-items: center;
     padding:20px 40px;
-    background:#020617;
+    background:rgb(65, 97, 164);
 }
-
-nav h1{
-    color:#38bdf8;
+nav div{
+    display: flex;
+    gap:30px;
 }
-
+    box-shadow:0 2px 10px rgba(0,0,0,0.05)}
+nav h2{color:white}
+nav ul{list-style:none;display:flex;gap:25px}
+nav ul li{
+    cursor: pointer;
+    color:white !important;
+}
 nav a{
-    color:#fff;
-    margin:0 10px;
-    text-decoration:none;
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    font-weight: bold;
 }
 
-/* Hero */
-.hero{
-    height:90vh;
-    display:flex;
-    flex-direction:column;
-    justify-content:center;
-    align-items:center;
-    text-align:center;
-    background: linear-gradient(135deg,#0f172a,#1e293b);
+nav a:hover{
+    color: #22c55e;
+}
+nav a{
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 8px;
+    transition: 0.3s;
 }
 
-.hero h2{
-    font-size:40px;
-    margin-bottom:20px;
+nav a:hover{
+    background: rgba(255,255,255,0.12);
+    color: #0d0e0d;
+    transform: translateY(-1px);
+    box-shadow: 0 2px 6px rgba(0,0,0,1);
 }
-
-.hero p{
-    color:#cbd5f5;
-    margin-bottom:20px;
-}
-
-.btn{
-    background:#22c55e;
-    padding:12px 25px;
-    border:none;
-    border-radius:8px;
-    color:#fff;
-    text-decoration:none;
-    transition:0.3s;
-}
-
-.btn:hover{
-    background:#16a34a;
-}
-
-/* Services */
-.services{
-    padding:60px 20px;
-    text-align:center;
-}
-
-.services h2{
-    margin-bottom:30px;
-}
-
-.cards{
-    display:flex;
-    gap:20px;
-    flex-wrap:wrap;
-    justify-content:center;
-}
-
-.card{
-    background:#1e293b;
-    padding:20px;
-    border-radius:10px;
-    width:250px;
-    transition:0.3s;
-}
-
-.card:hover{
-    transform:translateY(-10px);
-    background:#334155;
-}
-
-/* Contact */
-.contact{
-    padding:60px;
-    text-align:center;
-}
-
-.contact a{
-    color:#38bdf8;
-}
-
-/* Footer */
-footer{
-    text-align:center;
-    padding:20px;
-    background:#020617;
-    margin-top:30px;
-}
+.hero{height:20vh;display:flex;justify-content:center;align-items:center;text-align:center;flex-direction:column;padding:20px}
+.hero h1{font-size:45px}
+.hero span{color:#0284c7}
+.hero p{color:#475569;margin-top:10px}
+.buttons{margin-top:25px}
+.btn{padding:12px 25px;margin:5px;border-radius:10px;text-decoration:none;font-size:16px;transition:0.3s}
+.btn-green{background:#22c55e;color:rgba(5, 255, 97, 0.036)}
+.btn-green:hover{background:#16a34a;transform:scale(1.05)}
+.btn-blue{background:#0284c7;color:rgb(143, 51, 51)}
+.btn-blue:hover{background:#0369a1;transform:scale(1.05)}
+.services{padding:20px 20px;text-align:center}
+.cards{display:flex;justify-content:center;gap:20px;flex-wrap:wrap}
+.card{background:white;padding:20px;border-radius:15px;width:250px;box-shadow:0 5px 15px rgba(0,0,0,0.05);transition:0.3s}
+.card:hover{transform:translateY(-10px)}
+.contact{text-align:center;padding:10px}
+.contact a{display:inline-block;margin-top:10px;color:#0284c7;text-decoration:none}
+footer{text-align:center;padding:20px;background:#f1f5f9}
+@media(max-width:768px){.hero h1{font-size:28px}}
 </style>
 
 </head>
@@ -142,7 +91,10 @@ footer{
 
     <a class="btn" href="https://wa.me/97472172100" target="_blank">
         تواصل عبر واتساب
-    </a>
+    
+<a class="whatsapp-btn" href="https://wa.me/97472172100?text=السلام%20عليكم%20،%20أريد%20الاستفسار%20عن%20خدماتكم" target="_blank">
+    💬
+</a>
 </section>
 
 <!-- Services -->
@@ -170,11 +122,6 @@ footer{
 <!-- Contact -->
 <section class="contact" id="contact">
     <h2>للتواصل</h2>
-    <p>
-  <a href="https://wa.me/97472172100" target="_blank">
-    <i class="fab fa-whatsapp" style="color:green;"></i> تواصل عبر واتساب
-  </a>
-</p>
     <p>📞 اتصل بنا: 97472172100</p>
     <p>📧 hassanfagiri94@gmail.com</p>
 </section>
